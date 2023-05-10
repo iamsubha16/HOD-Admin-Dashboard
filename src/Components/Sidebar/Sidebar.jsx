@@ -21,7 +21,7 @@ function Sidebar() {
         <div className='sidebar'>
             <div className="top">
                 <div className="logo">
-                    <Typography variant="h5" gutterBottom>
+                    <Typography variant="h5" gutterBottom sx={{ cursor: 'pointer' }}>
                         HOD LOGO
                     </Typography>
                 </div>

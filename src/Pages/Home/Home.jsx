@@ -3,6 +3,8 @@ import React from 'react'
 import Sidebar from "../../Components/Sidebar/Sidebar"
 import Navbar from '../../Components/Navbar/Navbar'
 import Widget from '../../Components/Widget/Widget'
+import Featured from '../../Components/Featured/Featured'
+import Chart from '../../Components/Chart/Chart'
 
 import "./home.scss"
 
@@ -19,7 +21,10 @@ function Home() {
                     <Widget type="balance" />
                 </div>
 
-                <div className="charts">Charts</div>
+                <div className="charts">
+                    <Featured />
+                    <Chart />
+                </div>
 
             </div>
 
