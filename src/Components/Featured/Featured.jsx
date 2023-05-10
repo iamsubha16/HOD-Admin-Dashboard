@@ -12,13 +12,13 @@ import "./featured.scss"
 function Featured() {
     const revenueToday = {
         title: "Target",
-        value: 4577,
+        value: -4577,
         icon: <KeyboardArrowDownIcon fontSize='small' />,
     }
     const revenueWeek = {
         title: "Last Week",
         value: 6745,
-        icon: <KeyboardArrowUpIcon fontSize='small' />,
+        icon: <KeyboardArrowDownIcon fontSize='small' />,
     }
     const revenueMonth = {
         title: "Last Month",
@@ -44,23 +44,23 @@ function Featured() {
                 <div className="summary">
                     <div className="item">
                         <div className="itemTitle">{revenueToday.title}</div>
-                        <div className="itemResult negative">
+                        <div className={revenueToday.value > 0 ? "itemResult positive" : "itemResult negative"}>
                             {revenueToday.icon}
-                            <div className="resultAmount"> {"₹"}{revenueToday.value}</div>
+                            <div className="resultAmount"> {"₹"}{Math.abs(revenueToday.value)}</div>
                         </div>
                     </div>
                     <div className="item">
                         <div className="itemTitle">{revenueWeek.title}</div>
-                        <div className="itemResult positive">
+                        <div className={revenueWeek.value > 0 ? "itemResult positive" : "itemResult negative"}>
                             {revenueWeek.icon}
-                            <div className="resultAmount"> {"₹"}{revenueWeek.value}</div>
+                            <div className="resultAmount"> {"₹"}{Math.abs(revenueWeek.value)}</div>
                         </div>
                     </div>
                     <div className="item">
                         <div className="itemTitle">{revenueMonth.title}</div>
-                        <div className="itemResult positive">
+                        <div className={revenueMonth.value > 0 ? "itemResult positive" : "itemResult negative"}>
                             {revenueMonth.icon}
-                            <div className="resultAmount"> {"₹"}{revenueMonth.value}</div>
+                            <div className="resultAmount"> {"₹"}{Math.abs(revenueMonth.value)}</div>
                         </div>
                     </div>
                 </div>
