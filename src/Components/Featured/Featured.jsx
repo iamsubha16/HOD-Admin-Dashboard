@@ -18,12 +18,12 @@ function Featured() {
     const revenueWeek = {
         title: "Last Week",
         value: 6745,
-        icon: <KeyboardArrowDownIcon fontSize='small' />,
+        icon: <KeyboardArrowUpIcon fontSize='small' />,
     }
     const revenueMonth = {
         title: "Last Month",
         value: 10986,
-        icon: <KeyboardArrowDownIcon fontSize='small' />,
+        icon: <KeyboardArrowUpIcon fontSize='small' />,
     }
     return (
         <div className='featured'>

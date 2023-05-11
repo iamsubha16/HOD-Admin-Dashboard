@@ -1,3 +1,11 @@
 .chart {
     flex: 5;
+    box-shadow: 5px 5px 10px 0px rgba(209, 209, 209, 0.75);
+    border-radius: 10px;
+
+    .title {
+        color: grey;
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
 }
