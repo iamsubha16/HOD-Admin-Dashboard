@@ -1,0 +1,22 @@
+.table {
+    .cellWrapper {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .status {
+        padding: 10px;
+        border-radius: 5px;
+
+        &.Delivered {
+            color: green;
+            background-color: rgba(0, 128, 0, 0.205);
+        }
+
+        &.Pending {
+            color: goldenrod;
+            background-color: rgba(255, 255, 0, 0.211);
+        }
+    }
+}
