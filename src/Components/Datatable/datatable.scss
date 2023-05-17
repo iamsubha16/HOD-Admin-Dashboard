@@ -1,5 +1,15 @@
 .datatable {
     padding: 20px;
+
+    .dataTableTitle {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: #555;
+        font-size: 28px;
+        padding: 30px 0;
+    }
 }
 
 .cellWithImage {

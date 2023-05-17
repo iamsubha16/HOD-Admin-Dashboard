@@ -9,6 +9,7 @@ import { userColumns } from '../../datasheet';
 
 import "./datatable.scss"
 import { Container } from '@mui/material';
+import { Link } from 'react-router-dom';
 
 function Datatable() {
     const actionCol = [
@@ -20,9 +21,11 @@ function Datatable() {
             renderCell: () => {
                 return (
                     <div className="cellAction">
-                        <div className="viewButton">
-                            <Button variant="outlined">View</Button>
-                        </div>
+                        <Link to="/users/test" style={{ textDecoration: "none" }}>
+                            <div className="viewButton">
+                                <Button variant="outlined">View</Button>
+                            </div>
+                        </Link>
                         <div className="deleteButton">
                             <Button variant="outlined" color="error">
                                 Delete
@@ -35,6 +38,14 @@ function Datatable() {
     ];
     return (
         <div className='datatable'>
+            <div className="dataTableTitle">
+                Add New User
+                <Link to="/users/new" className='addUser'>
+                    <Button variant="contained" color="success">
+                        Add User
+                    </Button>
+                </Link>
+            </div>
             <Container maxWidth="xl">
                 <DataGrid
                     rows={userRows}

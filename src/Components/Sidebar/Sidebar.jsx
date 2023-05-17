@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 import Typography from '@mui/material/Typography';
 
@@ -20,11 +21,13 @@ function Sidebar() {
     return (
         <div className='sidebar'>
             <div className="top">
-                <div className="logo">
-                    <Typography variant="h5" gutterBottom sx={{ cursor: 'pointer' }}>
-                        HOD LOGO
-                    </Typography>
-                </div>
+                <Link to="/" style={{ textDecoration: "none" }}>
+                    <div className="logo">
+                        <Typography variant="h5" gutterBottom sx={{ cursor: 'pointer' }}>
+                            HOD LOGO
+                        </Typography>
+                    </div>
+                </Link>
             </div>
             <hr />
             <div className="center">
@@ -35,14 +38,18 @@ function Sidebar() {
                         <span>Dashboard</span>
                     </li>
                     <p className="title">LISTS</p>
-                    <li>
-                        <Inventory2Icon className="icon" />
-                        <span>Products</span>
-                    </li>
-                    <li>
-                        <PersonOutlineOutlinedIcon className="icon" />
-                        <span>Users</span>
-                    </li>
+                    <Link to="/products" style={{ textDecoration: "none" }}>
+                        <li>
+                            <Inventory2Icon className="icon" />
+                            <span>Products</span>
+                        </li>
+                    </Link>
+                    <Link to="/users" style={{ textDecoration: "none" }}>
+                        <li>
+                            <PersonOutlineOutlinedIcon className="icon" />
+                            <span>Users</span>
+                        </li>
+                    </Link>
                     <li>
                         <ShoppingCartIcon className="icon" />
                         <span>Orders</span>
