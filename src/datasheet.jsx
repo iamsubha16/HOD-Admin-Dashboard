@@ -91,6 +91,25 @@ export const userRows = [
     age: 69,
     status: "passive",
   },
+  {
+    id: 11,
+    image: "https://www.emmegi.co.uk/wp-content/uploads/2019/01/User-Icon.jpg",
+    username: "abcd398",
+    fullName: "XYZ",
+    email: "idontknow@xyz.com",
+    age: 80,
+    status: "active",
+  },
+  {
+    id: 12,
+    image: "https://www.emmegi.co.uk/wp-content/uploads/2019/01/User-Icon.jpg",
+    username: "abcd398",
+    fullName: "XYZABC",
+    email: "idontknow@xyz.com",
+    age: 80,
+    status: "pending",
+  },
+
 ];
 
 export const userColumns = [

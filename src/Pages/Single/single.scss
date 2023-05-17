@@ -1,0 +1,92 @@
+.single {
+    display: flex;
+    width: 100%;
+
+    .singleContainer {
+        flex: 7;
+
+        .top {
+            padding: 20px;
+            display: flex;
+            gap: 20px;
+
+            .left {
+                flex: 2;
+                box-shadow: 5px 5px 10px 0px rgba(209, 209, 209, 0.75);
+                border-radius: 10px;
+                padding-top: 20px;
+                position: relative;
+
+                .editButton {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    color: blue;
+                    background-color: rgba(0, 0, 255, 0.227);
+                    border-radius: 0 10px 0 10px;
+
+                    button {
+                        background-color: transparent;
+                        border: none;
+                        font-size: 18px;
+                        padding: 8px 12px;
+                        cursor: pointer;
+                    }
+                }
+
+                .item {
+                    padding: 20px;
+                    display: flex;
+                    gap: 50px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    .details {
+                        .itemTitle {
+                            margin-bottom: 10px;
+                            color: #555;
+                            font-size: 32px;
+                        }
+                        
+                        .detailItem {
+                            margin-bottom: 5px;
+
+                            .itemKey {
+                                font-weight: bold;
+                                color: #444;
+                                margin-right: 5px;
+                                font-size: 24px;
+                            }
+
+                            .itemValue {
+                                font-weight: 300;
+                                color: #444;
+                                font-size: 18px;
+                            }
+
+                        }
+                    }
+                }
+            }
+
+            .right {
+                flex: 3;
+                // box-shadow: 5px 5px 10px 0px rgba(209, 209, 209, 0.75);
+                // border-radius: 10px;
+            }
+        }
+
+        .buttom {
+            // box-shadow: 5px 5px 10px 0px rgba(209, 209, 209, 0.75);
+            // border-radius: 10px;
+            padding: 30px;
+            margin: 10px;
+        }
+
+        .title {
+            margin-bottom: 10px;
+            color: #999;
+        }
+    }
+}
